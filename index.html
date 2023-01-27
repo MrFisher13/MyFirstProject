@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=PT+Sans&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=PT+Sans&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<title>Coolets</title>
+
+<body>
+
+  <div class="wrapper">
+    <div id="scrollTop" class="show-it show-it_hide"><i class="fa-solid fa-circle-arrow-up"></i></div>
+  </div>
+
+  <header class="header">
+    <div class="wrapper">
+      <nav class="header__menu" id="header-logo">
+        <a href="#footer-logo" class="header__logo" id="logo">Coolets</a>
+        <ul class="header__items" id="header__items">
+          <li><a data-gone="menu-link" href="#rooms">Rooms</a></li>
+          <li><a data-gone="menu-link" href="#reservation">Reservation</a></li>
+          <li><a data-gone="menu-link" href="#contacts">Contacts</a></li>
+        </ul>
+        <a href="#!" class="header__button" id="header__button">Get Started</a>
+        <div class="hamb">
+          <div class="humb__field" id="humb">
+            <span class="humb__line"></span>
+            <span class="humb__line"></span>
+            <span class="humb__line"></span>
+          </div>
+        </div>
+      </nav>
+      <div class="popup" id="popup"></div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="wrapper">
+
+      <section class="intro" id="reservation" data-aos="fade-up">
+        <div class="intro__content">
+          <h1 class="intro__title">Nature, Warmth, and Beauty in One Space</h1>
+          <p class="intro__item">One place to release all the stress, bring back happines, and get back to nature. We
+            provide the best room and nature for you. Come visit us anytime you want.</p>
+          <a href="#!" class="intro__reservation">Reservation</a>
+        </div>
+        <div class="intro__img">
+          <img src="./img/house__1.jpg" alt="house_1">
+          <img src="./img/house__2.jpg" alt="house_2">
+          <img src="./img/house__3.jpg" alt="house_3">
+        </div>
+        <img class="house__full" src="./img/house__full.jpg" alt="">
+      </section>
+
+      <section class="about-hotel" data-aos="fade-down">
+        <div class="about-hotel__wrap">
+          <img src="./img/wood__house.jpg" alt="wood_house" class="about-hotel__img">
+          <div class="about-holet__discription">
+            <h2 class="discription__title">Cozy and Down to Earth Cootage Hotel in Norway.</h2>
+            <p class="discription__item">Our Cootage Hotel is an intimate hideway concieved for dicerning travelers.
+              It faces directly the unique and spectacular panorama of the Hallerbos Jungle. Cootels extends along a
+              private, quiet, and beautiful nature. Stay away from crowd and enjoy the cozy and beauty with us.</p>
+            <a href="#" class="discription__btn">Learn More</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="food">
+        <div class="food__wrap">
+
+          <div class="food__container_1" data-aos="fade-up-right">
+            <div class="food__content left">
+              <h2 class="food__title">Cabin Activities</h2>
+              <p class="food__item">Don’t worry to get bored easily in our cabin. We have so many cabin activities for
+                you
+                to do it alone or with group. Maybe this is the best chance for you to make new friends or even a lover.
+              </p>
+            </div>
+            <div class="food__img">
+              <img src="./img/food_1.jpg" alt="food">
+            </div>
+          </div>
+
+          <div class="food__container_2" data-aos="fade-up-left">
+            <div class="food__img">
+              <img src="./img/food_2.jpg" alt="food">
+            </div>
+            <div class="food__content right">
+              <h2 class="food__title">100% Organic Food</h2>
+              <p class="food__item">We served 100% organic, low process and delicious food. We allow our guest to have
+                breakfast or dinner request.What ever made your taste buds happy.</p>
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+
+      <section class="rooms" id="rooms">
+        <div class="rooms__wrap">
+          <div class="rooms__description" data-aos="zoom-in-up">
+            <h2 class="rooms__description_title">Many Rooms to Choose</h2>
+            <p class="rooms__description_item">There is a room for every needs. We have room for individuals until
+              family size, we also have a cabin for more private experience</p>
+            <a href="#" class="rooms__description_btn">Explore more</a>
+          </div>
+          <div class="rooms__cards">
+            <div class="rooms__card" data-aos="fade-up" data-aos-duration="1000">
+              <div class="rooms__img">
+                <img src="./img/room_1.jpg" alt="room">
+              </div>
+              <h3 class="rooms__title">Single Room</h3>
+              <p class="rooms__item">Best for a brave lone wolf who need comfort and quiet quality time, but you still
+                have a chance to meet others.</p>
+              <a href="#" class="rooms__btn">Learn more</a>
+            </div>
+            <div class="rooms__card" data-aos="fade-up" data-aos-duration="1000">
+              <div class="rooms__img">
+                <img src="./img/room_2.jpg" alt="room">
+              </div>
+              <h3 class="rooms__title">Double Room</h3>
+              <p class="rooms__item">Best for couple, seek happiness in intimacy without worry of being disturbed. Feel
+                the whole world just for you two</p>
+              <a href="#" class="rooms__btn">Learn more</a>
+            </div>
+            <div class="rooms__card" data-aos="fade-up" data-aos-duration="1000">
+              <div class="rooms__img">
+                <img src="./img/room_3.jpg" alt="room">
+              </div>
+              <h3 class="rooms__title">Cootage</h3>
+              <p class="rooms__item">Best for family or group. One cootage can fit up to 5 people. Made stronger bond
+                with your family or friends</p>
+              <a href="#" class="rooms__btn">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="book" id="contacts">
+        <div class="book__wrap">
+          <div class="book__container" data-aos="zoom-out-right">
+            <h2 class="book__subtitle">Start your journey!</h2>
+            <h2 class="book__title">How to Get My Room?</h2>
+            <p class="book__item">You can contact us by phone or email us. Easily tap the contact button below and it
+              will take you to our contact point</p>
+            <button class="book__btn">Contact us</button>
+            <a href="#!" class="book__link">Explore more</a>
+          </div>
+          <div class="book__accordion" data-aos="zoom-out-left">
+            <div class="accordion__box">
+              <div class="accordion__lable">1. Choose a room and date</div>
+              <div class="accordion__content">
+                <p>
+                  Contact us via phone or email, ask for availability of you choice of room. We might offer you
+                  something exciting.
+                </p>
+              </div>
+            </div>
+            <div class="accordion__box">
+              <div class="accordion__lable">2. Check for room availability</div>
+              <div class="accordion__content">
+                <p>
+                  Contact us via phone or email, ask for availability of you choice of room. We might offer you
+                  something exciting.
+                </p>
+              </div>
+            </div>
+            <div class="accordion__box">
+              <div class="accordion__lable">3. Enjoy your room</div>
+              <div class="accordion__content">
+                <p>
+                  Contact us via phone or email, ask for availability of you choice of room. We might offer you
+                  something exciting.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="women">
+        <div class="women-slider__container" data-aos="zoom-out-up">
+          <h4 class="women__title">Hear From Our Happy Customers</h4>
+          <span class="women-btn__prev"></span>
+          <div class="women-slider__wrap">
+            <div class="women-slider__line">
+              <img src="./img/img_women/01.jpg" alt="">
+              <img src="./img/img_women/02.jpg" alt="">
+              <img src="./img/img_women/03.jpg" alt="">
+              <img src="./img/img_women/04.jpg" alt="">
+              <img src="./img/img_women/05.jpg" alt="">
+            </div>
+          </div>
+          <span class="women-btn__next"></span>
+          <div class="women-coment">
+            <p>
+              “Great service, great food, great people. The scenery is also beautiful, you can do so much activity even
+              with your famility. Worth every penny! you should come and see for your self. 5 out of 5! the waffle is
+              great!”
+            </p>
+          </div>
+
+          <div class="women-name">
+            <p>Kirana Dunham</p>
+          </div>
+
+          <div class="women-dots">
+            <div class="women-dot dot_active"></div>
+            <div class="women-dot"></div>
+            <div class="women-dot"></div>
+            <div class="women-dot"></div>
+            <div class="women-dot"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__container" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        <div class="footer__social-media" id="footer-logo">
+          <a href="#header-logo" class="footer__titel">Cootels</a>
+          <p class="footer__item">Your Best Private Hideway From Crowd. Back to Nature.</p>
+          <div class="footer__media">
+            <a href="https://twitter.com"><img src="./img/social__media/01.svg" alt="twitter"
+                class="footer__media-icon"></a>
+            <a href="https://instagram.com"><img src="./img/social__media/02.svg" alt="twitter"
+                class="footer__media-icon"></a>
+            <a href="https://facebook.com"><img src="./img/social__media/03.svg" alt="twitter"
+                class="footer__media-icon"></a>
+          </div>
+        </div>
+        <div class="footer__menu">
+          <ul class="footer__rooms">
+            <li><a href="#rooms" class="room room__first">Rooms</a></li>
+            <li><a href="#" class="room">Single Room</a></li>
+            <li><a href="#" class="room">Double Room</a></li>
+            <li><a href="#" class="room">Cabin</a></li>
+            <li><a href="#" class="room">Custom Room</a></li>
+          </ul>
+          <ul class="footer__reservations">
+            <li><a href="#reservation" class="reservation reservation__first">Reservation</a></li>
+            <li><a href="#!" class="reservation">See the Steps</a></li>
+            <li><a href="#!" class="reservation">Best Time</a></li>
+          </ul>
+          <ul class="footer__contacts">
+            <li><a href="#contacts" class="contact contact__first">Contact</a></li>
+            <li><a href="#" class="contact">Our Number</a></li>
+            <li><a href="#" class="contact">Our Email</a></li>
+            <li><a href="#" class="contact">Our Location</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

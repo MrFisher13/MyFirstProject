@@ -1,0 +1,718 @@
+/* HEADER */
+.header {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+}
+.header__logo {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  color: #192252;
+}
+.header__menu ul {
+  display: flex;
+}
+.header__menu ul > li:not(:last-child) {
+  display: flex;
+  flex: 1 1 auto;
+  margin-right: 32px;
+}
+.header__menu ul > li > a {
+  color: #192252;
+  transition: 0.3s linear;
+}
+.header__menu ul > li > a:hover,
+.header__menu ul > li > a:active {
+  color: #2339b4;
+  text-shadow: 2px 2px 3px #15216796;
+}
+.header__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 0;
+  padding: 14px 16px;
+  background: #0e1734;
+  border-radius: 4px;
+  box-shadow: 0px 5px 3px #0e1734;
+  color: #fff;
+  transform: scale(1);
+  transition: 0.3s linear;
+}
+.header__button:hover,
+.header__button:active {
+  background: #1f326f;
+  box-shadow: 0px 5px 3px #1f326f;
+
+  transform: scale(1.1);
+}
+.hamb {
+  display: none;
+}
+.humb__field {
+}
+.humb__line {
+}
+.popup {
+  display: none;
+}
+
+/* INTRO */
+.intro {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 80px;
+  margin-bottom: 80px;
+}
+.intro__content {
+  padding: 215px 30px 0 0;
+  max-width: 530px;
+}
+.intro__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 150%;
+  color: #192252;
+}
+.intro__item {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #848fac;
+  padding-bottom: 10px;
+}
+.intro__reservation {
+  display: inline-block;
+  position: relative;
+  top: 0;
+  padding: 16px 32px;
+  background: #192252;
+  border-radius: 4px;
+  box-shadow: 0px 5px 3px #0e1734;
+  color: #fff;
+}
+.intro__reservation:hover,
+.intro__reservation:active {
+  top: 3px;
+  background: #1f326f;
+  box-shadow: 0px 5px 3px #1f326f;
+  transition: 0.2s linear;
+}
+.intro__img {
+  display: flex;
+  justify-content: space-between;
+  width: 590px;
+  height: auto;
+  margin-top: 115px;
+}
+.intro__img img {
+  max-width: 100%;
+}
+.intro__img img:nth-child(2) {
+  position: relative;
+  top: 80px;
+}
+.house__full {
+  display: none;
+}
+/* ABOUT-HOTEL */
+.about-hotel {
+}
+.about-hotel__wrap {
+  padding: 80px 0;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-holet__discription {
+  padding-left: 20px;
+  max-width: 690px;
+  text-align: justify;
+}
+.discription__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 150%;
+  color: #192252;
+  padding-bottom: 24px;
+}
+.discription__item {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #848fac;
+  padding-bottom: 28px;
+}
+.discription__btn {
+  display: inline-block;
+  padding: 16px 32px;
+  margin-bottom: 20px;
+  background: #0e1734;
+  border-radius: 4px;
+  color: #fff;
+  box-shadow: 0px 5px 3px #0e1734;
+  position: relative;
+  top: 0;
+}
+.discription__btn:hover,
+.discription__btn:active {
+  top: 3px;
+  background: #1f326f;
+  box-shadow: 0px 5px 3px #1f326f;
+  transition: 0.2s linear;
+}
+/* FOOD */
+.food {
+}
+.food__wrap {
+  padding: 80px 0;
+}
+.food__container_1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 32px;
+}
+.food__container_2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.food__content {
+  max-width: 693px;
+}
+.left {
+  max-width: 690px;
+  padding-right: 20px;
+}
+.right {
+  max-width: 640px;
+  padding-left: 20px;
+}
+.food__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 150%;
+  color: #192252;
+}
+.food__item {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #848fac;
+  text-align: justify;
+  padding-bottom: 20px;
+}
+.food__img img {
+  max-width: 100%;
+}
+.food__img {
+  width: 380px;
+}
+/* ROOMS */
+.rooms {
+}
+.rooms__wrap {
+  padding: 80px 0;
+}
+.rooms__description {
+  margin: 0 auto;
+  margin-bottom: 88px;
+  max-width: 588px;
+}
+.rooms__description_title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 150%;
+  text-align: center;
+  color: #192252;
+  padding: 0 0 24px 0;
+}
+.rooms__description_item {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: #848fac;
+  padding: 0px 0px 32px 0px;
+}
+.rooms__description_btn {
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 16px 32px;
+  background: #0e1734;
+  border-radius: 4px;
+  color: #fff;
+  box-shadow: 0px 5px 3px #0e1734;
+  max-width: 165px;
+  margin: 0 auto;
+  text-align: center;
+}
+.rooms__description_btn:hover,
+.rooms__description_btn:active {
+  top: 3px;
+  background: #1f326f;
+  box-shadow: 0px 5px 3px #1f326f;
+  transition: 0.2s linear;
+}
+.rooms__cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.rooms__card {
+  max-width: 384px;
+}
+.rooms__img img {
+  width: 100%;
+  margin-bottom: 32px;
+}
+.rooms__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  color: #000;
+  padding-bottom: 16px;
+}
+.rooms__item {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #848fac;
+  padding-bottom: 30px;
+}
+.rooms__btn {
+  display: block;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #424f7b;
+  width: 130px;
+  background: url("../img/arrows/room_arrow.svg") 100px 50% no-repeat;
+  transition: 0.3s linear;
+}
+.rooms__btn:after {
+  display: block;
+}
+.rooms__btn:hover,
+.rooms__btn:active {
+  background: url("../img/arrows/room_arrow.svg") 105px 50% no-repeat;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.433);
+}
+/* BOOK */
+.book {
+}
+.book__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 0;
+}
+.book__container {
+  max-width: 420px;
+}
+.book__subtitle {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #424f7b;
+  padding-bottom: 12px;
+}
+.book__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 150%;
+  color: #192252;
+  padding-bottom: 24px;
+}
+.book__item {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #848fac;
+  padding-bottom: 32px;
+}
+.book__btn {
+  display: inline-block;
+  padding: 16px 32px;
+  background: #0e1734;
+  border-radius: 4px;
+  color: #fff;
+  box-shadow: 0px 5px 3px #0e1734;
+  position: relative;
+  top: 0;
+  left: 0;
+  background: #0e1734;
+  border-radius: 4px;
+}
+.book__btn:hover,
+.book__btn:active {
+  top: 3px;
+  background: #1f326f;
+  box-shadow: 0px 5px 3px #1f326f;
+  transition: 0.2s linear;
+}
+.book__link {
+  display: inline-block;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  margin-left: 24px;
+  color: #0e1734;
+  transition: 0.3s linear;
+}
+.book__link:hover,
+.book__link:active {
+  text-decoration: underline;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.433);
+}
+.book__accordion {
+  max-width: 588px;
+  margin-left: 20px;
+}
+.accordion__box {
+  position: relative;
+  margin-bottom: 24px;
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 1px 30px #dfdfdfe9;
+}
+.accordion__box:last-child {
+  margin-bottom: 0;
+}
+.accordion__lable {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  color: #424f7b;
+  position: relative;
+  cursor: pointer;
+  padding: 32px;
+  transition: 0.3s linear;
+}
+.accordion__lable:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 30%;
+  right: 5%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ffece2;
+  text-align: center;
+  background-image: url("../img/arrows/arrow_slide.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(0deg);
+}
+.accordion__lable:hover:after {
+  box-shadow: 0 0 30px #f0813cc7;
+  transition: 0.3s linear;
+}
+.accordion__active .accordion__lable:after {
+  content: "";
+  color: #ffece2;
+  background: #ff620a;
+  background-image: url("../img/arrows/arrow_slide\ 2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.accordion__content {
+  position: relative;
+  overflow: hidden;
+  max-height: 0;
+  transition: 0.3s linear;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #848fac;
+}
+.accordion__content p {
+  padding: 0px 32px 32px 32px;
+}
+/* WOMEN */
+.women {
+}
+.women-slider__container {
+  padding: 80px 0;
+  text-align: center;
+}
+.women__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 150%;
+  color: #192252;
+  padding-bottom: 62px;
+}
+.women-slider__wrap {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: 0.3s linear;
+  margin-bottom: 24px;
+}
+.women-slider__wrap:hover {
+  box-shadow: 0 0 30px #2339b4;
+}
+.women-slider__line {
+  display: flex;
+  position: relative;
+  top: 0;
+  transition: 0.3s linear;
+}
+.women-btn__prev {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/arrows/arrow_slide.svg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  transform: rotate(90deg);
+  opacity: 0.1;
+  transition: 0.3s linear;
+}
+.women-btn__next {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("../img/arrows/arrow_slide.svg") 50%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  transform: rotate(-90deg);
+  opacity: 0.1;
+  transition: 0.3s linear;
+}
+.women-btn__prev:hover,
+.women-btn__next:hover {
+  opacity: 1;
+}
+.women-coment {
+  margin: 0 auto;
+  max-width: 793px;
+  padding-bottom: 40px;
+}
+.women-coment p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #848fac;
+}
+.women-name {
+  padding-bottom: 24px;
+}
+.women-name p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #192252;
+}
+.women-dots {
+}
+.women-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: rgba(250, 176, 71, 0.35);
+  transform: scale(1);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+.women-dot:not(:last-child) {
+  margin-right: 10px;
+}
+.dot_active {
+  background: #fab047;
+  transform: scale(1.3);
+}
+/* FOOTER */
+.footer {
+  background: #0b265a;
+  padding: 120px 0;
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__social-media {
+}
+.footer__titel {
+  display: block;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+  margin-bottom: 13px;
+  cursor: pointer;
+}
+.footer__item {
+  max-width: 196px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #d9dbde;
+  margin-bottom: 36px;
+}
+.footer__media a:not(:last-child) {
+  margin-right: 25px;
+}
+.footer__media-icon:not(:last-child) {
+  padding-right: 25px;
+}
+.footer__media-icon {
+  transform: scale(1);
+  transition: 0.3s linear;
+}
+.footer__media-icon:hover {
+  transform: scale(1.3);
+}
+.footer__menu {
+  display: flex;
+  justify-content: space-between;
+  width: 582px;
+  transition: 0.3s linear;
+}
+.footer__menu a:hover {
+  text-decoration: underline;
+}
+.footer__rooms {
+}
+.room {
+  display: block;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #d9dbde;
+  padding-bottom: 24px;
+  transition: 0.3s linear;
+}
+.room:hover {
+  text-shadow: 0px 0px 5px #ffffff;
+}
+.room__first {
+  font-weight: 700;
+  color: #fff;
+}
+.footer__reservations {
+}
+.reservation {
+  display: block;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #d9dbde;
+  padding-bottom: 24px;
+  transition: 0.3s linear;
+}
+.reservation__first {
+  font-weight: 700;
+  color: #fff;
+}
+.reservation:hover {
+  text-shadow: 0px 0px 5px #ffffff;
+}
+.footer__contacts {
+}
+.contact {
+  display: block;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #d9dbde;
+  padding-bottom: 24px;
+  transition: 0.3s linear;
+}
+.contact__first {
+  font-weight: 700;
+  color: #fff;
+}
+.contact:hover {
+  text-shadow: 0px 0px 5px #ffffff;
+}
+/* Scroll */
+#scrollTop {
+  position: fixed;
+  left: 30px;
+  bottom: 50px;
+  z-index: 99;
+  transform: scale(2.5);
+  color: #848fac;
+}
+.show-it {
+  opacity: 1;
+  transition: .5s linear;
+}
+.show-it_hide {
+  opacity: 0;
+}
