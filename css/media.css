@@ -139,10 +139,10 @@
 }
 @media (max-width: 495px) {
   .accordion__lable {
-    font-size: 20px;
+    font-size: 22px;
   }
   .accordion__content {
-    font-size: 13px;
+    font-size: 17px;
   }
 }
 @media (max-width: 430px) {
@@ -161,14 +161,14 @@
 }
 @media (max-width: 395px) {
   .accordion__lable {
-    font-size: 13px;
+    font-size: 15px;
   }
   .accordion__lable:after {
     width: 35px;
     height: 35px;
   }
   .accordion__content {
-    font-size: 10px;
+    font-size: 15px;
   }
 }
 /* WOMEN */
@@ -229,14 +229,8 @@
   #scrollTop {
     position: fixed;
     right: 50px;
-    bottom: 100px;
+    bottom: 50px;
     z-index: 99;
-    transform: scale(2);
-  }
-}
-/* MODE */
-@media (max-width: 400px) {
-  .modes img {
-    margin: 0 10px;
+    transform: scale(2.5);
   }
 }

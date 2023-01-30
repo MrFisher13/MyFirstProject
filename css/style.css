@@ -19,7 +19,7 @@
 }
 .header__menu ul {
   display: flex;
-  margin: auto;
+  margin: auto 230px auto auto;
 }
 .header__menu ul > li:not(:last-child) {
   display: flex;
@@ -85,7 +85,7 @@
   font-weight: 600;
   font-size: 48px;
   line-height: 150%;
-  color: #192252;
+  /* color: #192252; */
 }
 .intro__item {
   font-family: "Inter";
@@ -269,14 +269,14 @@
   position: relative;
   top: 0;
   left: 0;
-  padding: 16px 32px;
+  padding: 15px 30px;
   background: #0e1734;
-  border-radius: 4px;
+  border-radius: 5px;
   color: #fff;
   box-shadow: 0px 5px 3px #0e1734;
-  max-width: 165px;
-  margin: 0 auto;
   text-align: center;
+  width: 165px;
+  margin: 0 auto;
 }
 .rooms__description_btn:hover,
 .rooms__description_btn:active {
@@ -715,9 +715,4 @@
 }
 .arrow-show_hide {
   opacity: 0;
-}
-/* MODE */
-.modes img {
-  transform: scale(1.5);
-  margin-left: 20px;
 }
