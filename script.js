@@ -138,13 +138,16 @@ window.addEventListener("scroll", () => {
 // Mode
 const themeSwitchers = document.querySelectorAll(".mode_img"); //Находим элементы иконок
 
-themeSwitchers.forEach((switcher) => { //Перебираем наши иконки через forEach
-  switcher.addEventListener("click", function () { //По клику присваиваем функцию котороя будет переключать тему согластно атрибута data-theme
+themeSwitchers.forEach((switcher) => {
+  //Перебираем наши иконки через forEach
+  switcher.addEventListener("click", function () {
+    //По клику присваиваем функцию котороя будет переключать тему согластно атрибута data-theme
     applyMode(this.dataset.mode); // Вызываем ф-цию которая отображает тему согластно CSS стиля
   });
 });
 
-function applyMode(modeName) { // Создаём функцию котороя отображает тему согластно CSS стиля
+function applyMode(modeName) {
+  // Создаём функцию котороя отображает тему согластно CSS стиля
   let modeUrl = `css/${modeName}.css`;
   document.querySelector('[title="theme"]').setAttribute("href", modeUrl);
 }
