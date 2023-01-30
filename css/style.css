@@ -707,8 +707,6 @@
   right: 100px;
   bottom: 100px;
   z-index: 99;
-  transform: scale(2.5);
-  color: #848fac;
   transform: scale(3.5);
 }
 .arrow-show {
