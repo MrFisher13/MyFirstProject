@@ -19,6 +19,7 @@
 }
 .header__menu ul {
   display: flex;
+  margin: auto;
 }
 .header__menu ul > li:not(:last-child) {
   display: flex;
@@ -303,7 +304,7 @@
   font-weight: 600;
   font-size: 24px;
   line-height: 150%;
-  color: #000;
+  color: #192252;
   padding-bottom: 16px;
 }
 .rooms__item {
@@ -447,7 +448,7 @@
   border-radius: 50%;
   background: #ffece2;
   text-align: center;
-  background-image: url("../img/arrows/arrow_slide.svg");
+  background-image: url("../img/arrows/accordion-arrow_down.svg");
   background-repeat: no-repeat;
   background-position: center;
   transform: rotate(0deg);
@@ -460,7 +461,7 @@
   content: "";
   color: #ffece2;
   background: #ff620a;
-  background-image: url("../img/arrows/arrow_slide\ 2.svg");
+  background-image: url("../img/arrows/accordion-arrow_up.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -517,7 +518,7 @@
   display: inline-block;
   width: 20px;
   height: 20px;
-  background-image: url("../img/arrows/arrow_slide.svg");
+  background-image: url("../img/arrows/accordion-arrow_down.svg");
   background-position: 50%;
   background-repeat: no-repeat;
   background-color: transparent;
@@ -529,7 +530,7 @@
   display: inline-block;
   width: 20px;
   height: 20px;
-  background: url("../img/arrows/arrow_slide.svg") 50%;
+  background: url("../img/arrows/accordion-arrow_down.svg") 50%;
   background-position: 50%;
   background-repeat: no-repeat;
   background-color: transparent;
@@ -700,19 +701,25 @@
 .contact:hover {
   text-shadow: 0px 0px 5px #ffffff;
 }
-/* Scroll */
+/* SCROLL */
 #scrollTop {
   position: fixed;
-  left: 30px;
-  bottom: 50px;
+  right: 100px;
+  bottom: 100px;
   z-index: 99;
   transform: scale(2.5);
   color: #848fac;
+  transform: scale(3.5);
 }
-.show-it {
+.arrow-show {
   opacity: 1;
   transition: .5s linear;
 }
-.show-it_hide {
+.arrow-show_hide {
   opacity: 0;
+}
+/* MODE */
+.modes img {
+  transform: scale(1.5);
+  margin-left: 20px;
 }

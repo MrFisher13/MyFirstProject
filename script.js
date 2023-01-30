@@ -121,14 +121,30 @@ for (let anchor of anchors) {
 }
 
 // scrollTop
-const scrollTop = document.querySelector(".show-it");
+const scrollTop = document.querySelector(".arrow-show");
 
-scrollTop.addEventListener("click", () => {window.scrollTo(0, 0)});
+scrollTop.addEventListener("click", () => {
+  window.scrollTo(0, 0);
+});
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 300) {
-    scrollTop.classList.remove("show-it_hide");
+    scrollTop.classList.remove("arrow-show_hide");
   } else {
-    scrollTop.classList.add("show-it_hide");
+    scrollTop.classList.add("arrow-show_hide");
   }
+});
+
+// Mode
+const themeSwitchers = document.querySelectorAll(".mode_img"); //Находим элементы иконок
+
+themeSwitchers.forEach((switcher) => { //Перебираем наши иконки через forEach
+  switcher.addEventListener("click", function () { //По клику присваиваем функцию котороя будет переключать тему согластно атрибута data-theme
+    applyMode(this.dataset.mode); // Вызываем ф-цию которая отображает тему согластно CSS стиля
   });
+});
+
+function applyMode(modeName) { // Создаём функцию котороя отображает тему согластно CSS стиля
+  let modeUrl = `css/${modeName}.css`;
+  document.querySelector('[title="theme"]').setAttribute("href", modeUrl);
+}

@@ -1,0 +1,10 @@
+body {
+  background: #FFFFFF;
+}
+
+.mode_img[data-mode="light"] {
+  display: none;
+}
+.mode_img[data-mode="dark"] {
+  display: block;
+}

@@ -1,0 +1,9 @@
+body {
+  background: #333333;
+}
+.mode_img[data-mode="light"] {
+  display: block;
+}
+.mode_img[data-mode="dark"] {
+  display: none;
+}
