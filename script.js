@@ -120,7 +120,7 @@ for (let anchor of anchors) {
   });
 }
 
-// scrollTop
+// ScrollTop
 const scrollTop = document.querySelector(".arrow-show");
 
 scrollTop.addEventListener("click", () => {
@@ -136,18 +136,25 @@ window.addEventListener("scroll", () => {
 });
 
 // Mode
-const themeSwitchers = document.querySelectorAll(".mode_img"); //Находим элементы иконок
+const themeSwitchers = document.querySelectorAll(".mode_img");
 
 themeSwitchers.forEach((switcher) => {
-  //Перебираем наши иконки через forEach
   switcher.addEventListener("click", function () {
-    //По клику присваиваем функцию котороя будет переключать тему согластно атрибута data-theme
-    applyMode(this.dataset.mode); // Вызываем ф-цию которая отображает тему согластно CSS стиля
+    applyMode(this.dataset.mode);
+    localStorage.setItem("theme", this.dataset.mode);
   });
 });
 
 function applyMode(modeName) {
-  // Создаём функцию котороя отображает тему согластно CSS стиля
   let modeUrl = `css/${modeName}.css`;
   document.querySelector('[title="theme"]').setAttribute("href", modeUrl);
 }
+
+let activeTheme = localStorage.getItem("theme");
+
+if (activeTheme === null) {
+  applyMode("light");
+} else {
+  applyMode(activeTheme);
+}
+// Modal windows

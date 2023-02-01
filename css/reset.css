@@ -14,9 +14,9 @@ a:focus, a:active {outline: none;}
  nav,footer,header,aside {display: block;}
 
  html,body {
-  /* -moz-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   -wedkit-box-sizing: border-box;
-  box-sizing: border-box; */
+  box-sizing: border-box;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
@@ -29,7 +29,7 @@ a:focus, a:active {outline: none;}
   -moz-text-adjust: 100%;
   -webkit-text-adjust: 100%;
   scroll-behavior: smooth;
-  transition: 0.5s linear;
+  transition: 0.3s linear;
  }
 input,button,textarea {font-family: inherit; font-size: inherit;}
 
