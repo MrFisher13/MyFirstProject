@@ -34,7 +34,8 @@
           <li><a data-gone="menu-link" href="#reservation">Reservation</a></li>
           <li><a data-gone="menu-link" href="#contacts">Contacts</a></li>
         </ul>
-        <a href="#!" class="header__button" id="header__button">Get Started</a>
+        <a href="#!" class="header__button">Get Started</a>
+
         <div class="hamb">
           <div class="humb__field" id="humb">
             <span class="humb__line"></span>
@@ -44,6 +45,23 @@
         </div>
       </nav>
       <div class="popup" id="popup"></div>
+    </div>
+    <div class="header__modal">
+      <form action="#!" method="get" class="header__modal-form">
+        <div class="modal-form__cross"><i class="fa-solid fa-circle-xmark"></i></div>
+        <label>
+          <input type="text" placeholder="phone or email">
+        </label>
+        <label>
+          <input type="password" placeholder="password">
+        </label>
+        <a href="#!" class="modal-form__recovery">Remind password</a>
+        <div class="modal-form__action">
+          <button type="submit" class="modal-form__sign-in">Sign in</button>
+          <a href="#!" class="modal-form__sign-up">Sign up</a>
+        </div>
+      </form>
+
     </div>
   </header>
 
@@ -56,6 +74,17 @@
           <p class="intro__item">One place to release all the stress, bring back happines, and get back to nature. We
             provide the best room and nature for you. Come visit us anytime you want.</p>
           <a href="#!" class="intro__reservation">Reservation</a>
+          <!-- <div class="intro__modal">
+            <form action="#!" class="intro__modal-form">
+              <label>
+                <section>
+                  <option>Singl room</option>
+                  <option>Double room</option>
+                  <option>Cootage</option>
+                </section>
+              </label>
+            </form>
+          </div> -->
         </div>
         <div class="intro__img">
           <img src="./img/house__1.jpg" alt="house_1">
@@ -267,9 +296,8 @@
       </div>
     </div>
   </footer>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
-    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="modals.js"></script>
   <script src="script.js"></script>
 </body>
 

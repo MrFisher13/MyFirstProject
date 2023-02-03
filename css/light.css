@@ -280,3 +280,34 @@ body {
     color: #0b265a;
   }
 }
+/* HEADER MODAL */
+.header__modal {
+  background: rgba(0, 0, 0, 0.8);
+}
+.header__modal-form {
+  box-shadow: 0 0 30px #000000c9;
+  background: #3465ae;
+}
+.header__modal-form input{
+  color: rgb(20, 35, 100);
+}
+.modal-form__cross {
+  color: rgb(20, 35, 100);
+}
+.header__modal-form input:focus {
+  box-shadow: 0 0 20px #00001d;
+}
+.header__modal-form input::placeholder {
+  color: rgba(0, 26, 255, 0.393);
+}
+.modal-form__recovery{color: #fff;}
+.modal-form__sign-in {
+  background: rgb(20, 35, 100);
+  color: #fff;
+}
+.modal-form__sign-in:hover {
+  background: rgba(0, 9, 54, 0.83);
+}
+.modal-form__sign-up {
+  color: #fff;
+}

@@ -283,3 +283,35 @@ body {
     color: #d7d7d7;
   }
 }
+/* HEADER MODAL */
+.header__modal {
+  background: rgba(82, 82, 82, 0.8);
+}
+.header__modal-form {
+  box-shadow: 0 0 30px #000000c9;
+  background: #292d33;
+}
+.header__modal-form input{
+  color: rgb(0, 0, 0);
+  background: rgb(160, 217, 228);
+}
+.modal-form__cross {
+  color: rgb(160, 217, 228);
+}
+.header__modal-form input:focus {
+  box-shadow: 0 0 20px #dadada;
+}
+.header__modal-form input::placeholder {
+  color: rgba(17, 14, 14, 0.393);
+}
+.modal-form__recovery{color: #959595;}
+.modal-form__sign-in {
+  background: rgb(160, 217, 228);
+  color: rgb(0, 0, 0);
+}
+.modal-form__sign-in:hover {
+  background: rgb(255, 255, 255);
+}
+.modal-form__sign-up {
+  color: rgb(149, 149, 149);
+}
