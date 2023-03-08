@@ -47,62 +47,6 @@ function boxHundler(e) {
     currentContent.style.maxHeight = 0;
   }
 }
-// Slider
-const sliderLine = document.querySelector(".women-slider__line"),
-  nextBtn = document.querySelector(".women-btn__next"),
-  prevBtn = document.querySelector(".women-btn__prev"),
-  dots = document.querySelectorAll(".women-dot");
-
-let position = 0,
-  dotIndex = 0;
-
-const nextSlide = () => {
-  if (position < (dots.length - 1) * 120) {
-    position += 120;
-    dotIndex++;
-  } else {
-    position = 0;
-    dotIndex = 0;
-  }
-  sliderLine.style.left = -position + "px";
-  dotSlide(dotIndex);
-};
-
-const prevSlide = () => {
-  if (position > 0) {
-    position -= 120;
-    dotIndex--;
-  } else {
-    position = (dots.length - 1) * 120;
-    dotIndex = dots.length - 1;
-  }
-  sliderLine.style.left = -position + "px";
-  dotSlide(dotIndex);
-};
-
-const dotSlide = (index) => {
-  for (let dot of dots) {
-    dot.classList.remove("dot_active");
-  }
-  dots[index].classList.add("dot_active");
-};
-
-dots.forEach((dot, index) => {
-  dot.addEventListener("click", () => {
-    position = 120 * index;
-    sliderLine.style.left = -position + "px";
-    dotIndex = index;
-    dotSlide(dotIndex);
-  });
-});
-
-nextBtn.addEventListener("click", nextSlide);
-prevBtn.addEventListener("click", prevSlide);
-
-setInterval(() => {
-  nextSlide();
-}, 3000);
-
 // Animation of page
 AOS.init({ disable: "mobile" });
 
@@ -157,4 +101,13 @@ if (activeTheme === null) {
 } else {
   applyMode(activeTheme);
 }
-// Modal windows
+// Swiper
+
+new Swiper(".customers", {
+  slidesPerView: 1,
+  loop: true,
+  pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+  }
+});

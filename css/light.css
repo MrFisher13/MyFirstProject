@@ -198,37 +198,25 @@ body {
   color: var(--item);
 }
 /* WOMEN */
-.women__title {
-  color: var(--title);
+.customers__section .title {
+  color: #192252;
 }
-.women-slider__wrap:hover {
-  box-shadow: 0 0 30px #2339b4;
+
+.customers__section .customers__items .customers__image:hover {
+  box-shadow: 0px 0px 30px #192252;
+  transition: .3s linear;
 }
-.women-btn__prev {
-  background-image: url("../img/arrows/accordion-arrow_down.svg");
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  transform: rotate(90deg);
+
+.customers__section .customers__items .customers__text {
+  color: #848fac;
 }
-.women-btn__next {
-  background: url("../img/arrows/accordion-arrow_down.svg") 50%;
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  transform: rotate(-90deg);
+
+.customers__section .customers__items .customers__name {
+  color: #192252;
 }
-.women-coment p {
-  color: var(--item);
-}
-.women-name p {
-  color: var(--title);
-}
-.women-dot {
-  background: rgba(250, 176, 71, 0.35);
-}
-.dot_active {
-  background: #fab047;
+
+.customers__section .swiper-pagination-clickable .swiper-pagination-bullet {
+  background-color: #ff8a47;
 }
 /* FOOTER */
 .footer {

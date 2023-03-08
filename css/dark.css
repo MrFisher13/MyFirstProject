@@ -27,15 +27,15 @@ body {
     background: var(--btn-bg);
   }
   .popup {
-    background: #ababab;
+    background: #505050;
   }
   .popup .header__logo {
     color: var(--btn-bg);
-    text-shadow: 3px 3px 3px var(--btn-color);
+    text-shadow: 3px 3px 3px #7e7e7e;
   }
   .popup ul > li > a {
     color: var(--btn-bg);
-    text-shadow: 3px 3px 3px var(--btn-color);
+    text-shadow: 3px 3px 3px #7e7e7e;
   }
   .popup ul > li > a:hover,
   .popup ul > li > a:active {
@@ -201,37 +201,25 @@ body {
   color: rgb(214, 214, 214);
 }
 /* WOMEN */
-.women__title {
+.customers__section .title {
   color: var(--title);
 }
-.women-slider__wrap:hover {
-  box-shadow: 0 0 30px var(--btn-box-shadow-hover-active);
+
+.customers__section .customers__items .customers__image:hover {
+  box-shadow: 0px 0px 20px #d8d8d8;
+  transition: .3s linear;
 }
-.women-btn__prev {
-  background-image: url("../img/arrows/accordion-arrow_up.svg");
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  transform: rotate(-90deg);
+
+.customers__section .customers__items .customers__text {
+  color: #737373;
 }
-.women-btn__next {
-  background: url("../img/arrows/accordion-arrow_up.svg") 50%;
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  transform: rotate(90deg);
+
+.customers__section .customers__items .customers__name {
+  color: rgb(214, 214, 214);
 }
-.women-coment p {
-  color: rgb(200, 200, 200);
-}
-.women-name p {
-  color: rgb(200, 200, 200);
-}
-.women-dot {
-  background: #ffffff;
-}
-.dot_active {
-  background: #959595;
+
+.customers__section .swiper-pagination-clickable .swiper-pagination-bullet {
+  background-color: #595959;
 }
 /* FOOTER */
 .footer {

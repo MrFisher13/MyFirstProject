@@ -8,12 +8,22 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" title="theme" href="#">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=PT+Sans&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=PT+Sans&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=PT+Sans&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=PT+Sans&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script defer src="script.js"></script>
+  <script defer src="scriptModal.js"></script>
 </head>
+
 <title>Coolets</title>
 
 <body>
@@ -74,24 +84,13 @@
           <p class="intro__item">One place to release all the stress, bring back happines, and get back to nature. We
             provide the best room and nature for you. Come visit us anytime you want.</p>
           <a href="#!" class="intro__reservation">Reservation</a>
-          <!-- <div class="intro__modal">
-            <form action="#!" class="intro__modal-form">
-              <label>
-                <section>
-                  <option>Singl room</option>
-                  <option>Double room</option>
-                  <option>Cootage</option>
-                </section>
-              </label>
-            </form>
-          </div> -->
         </div>
         <div class="intro__img">
           <img src="./img/house__1.jpg" alt="house_1">
           <img src="./img/house__2.jpg" alt="house_2">
           <img src="./img/house__3.jpg" alt="house_3">
         </div>
-        <img class="house__full" src="./img/house__full.jpg" alt="">
+        <img class="house__full" src="./img/house__full.jpg" alt="house">
       </section>
 
       <section class="about-hotel" data-aos="fade-down" data-aos-duration="1000">
@@ -220,41 +219,69 @@
         </div>
       </section>
 
-      <section class="women">
-        <div class="women-slider__container" data-aos="zoom-out-up" data-aos-delay="200">
-          <h4 class="women__title">Hear From Our Happy Customers</h4>
-          <span class="women-btn__prev"></span>
-          <div class="women-slider__wrap">
-            <div class="women-slider__line">
-              <img src="./img/img_women/01.jpg" alt="">
-              <img src="./img/img_women/02.jpg" alt="">
-              <img src="./img/img_women/03.jpg" alt="">
-              <img src="./img/img_women/04.jpg" alt="">
-              <img src="./img/img_women/05.jpg" alt="">
+      <section class="customers__section">
+        <div class="container">
+            <p class="title">Hear From Our Happy Customers</p>
+
+            <div class="swiper customers">
+                <div class="swiper-wrapper">
+
+                    <!-- ==================== item 1 ===================== -->
+                    <div class="customers__items swiper-slide">
+                        <div class="customers__image">
+                          <img src="./img/img_women/01.jpg" alt="image">
+                        </div>
+                        <p class="customers__text">
+                            “Great service, great food, great people. The scenery is also beautiful, you can do so much
+                            activity even with your famility. Worth every penny! you should come and see for your self. 5
+                            out of 5! the waffle is great!”
+                        </p>
+                        <p class="customers__name">Kirana Dunham</p>
+                    </div>
+
+                    <!-- ==================== item 2 ===================== -->
+                    <div class="customers__items swiper-slide">
+                        <div class="customers__image">
+                          <img src="./img/img_women/02.jpg" alt="image">
+                        </div>
+                        <p class="customers__text">
+                            “Great service, great food, great people. The scenery is also beautiful, you can do so much
+                            activity even with your famility. Worth every penny! you should come and see for your self. 5
+                            out of 5! the waffle is great!”
+                        </p>
+                        <p class="customers__name">Rachel McAdams</p>
+                    </div>
+
+                    <!-- ==================== item 3 ===================== -->
+                    <div class="customers__items swiper-slide">
+                        <div class="customers__image">
+                          <img src="./img/img_women/03.jpg" alt="image">
+                        </div>
+                        <p class="customers__text">
+                            “Great service, great food, great people. The scenery is also beautiful, you can do so much
+                            activity even with your famility. Worth every penny! you should come and see for your self. 5
+                            out of 5! the waffle is great!”
+                        </p>
+                        <p class="customers__name">Natalie Portman</p>
+                    </div>
+
+                    <!-- ==================== item 4 ===================== -->
+                    <div class="customers__items swiper-slide">
+                        <div class="customers__image">
+                          <img src="./img/img_women/04.jpg" alt="image">
+                        </div>
+                        <p class="customers__text">
+                            “Great service, great food, great people. The scenery is also beautiful, you can do so much
+                            activity even with your famility. Worth every penny! you should come and see for your self. 5
+                            out of 5! the waffle is great!”
+                        </p>
+                        <p class="customers__name">Angelina Jolie</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
-          </div>
-          <span class="women-btn__next"></span>
-          <div class="women-coment">
-            <p>
-              “Great service, great food, great people. The scenery is also beautiful, you can do so much activity even
-              with your famility. Worth every penny! you should come and see for your self. 5 out of 5! the waffle is
-              great!”
-            </p>
-          </div>
-
-          <div class="women-name">
-            <p>Kirana Dunham</p>
-          </div>
-
-          <div class="women-dots">
-            <div class="women-dot dot_active"></div>
-            <div class="women-dot"></div>
-            <div class="women-dot"></div>
-            <div class="women-dot"></div>
-            <div class="women-dot"></div>
-          </div>
         </div>
-      </section>
+    </section>
     </div>
   </main>
 
@@ -296,9 +323,6 @@
       </div>
     </div>
   </footer>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="modals.js"></script>
-  <script src="script.js"></script>
 </body>
 
 </html>

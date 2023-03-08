@@ -429,101 +429,70 @@ body.noscroll {
   padding: 0px 32px 32px 32px;
 }
 /* WOMEN */
-.women {
+.customers__section {
+  padding: 80px 0px;
 }
-.women-slider__container {
-  padding: 80px 0;
+
+.customers__section .title {
   text-align: center;
-}
-.women__title {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 36px;
   line-height: 150%;
-  padding-bottom: 62px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #192252;
 }
-.women-slider__wrap {
-  display: inline-block;
-  vertical-align: middle;
-  max-width: 120px;
+
+.customers__section .customers__items {
+  text-align: center;
+  margin-top: 62px;
+  margin-bottom: 50px;
+}
+
+.customers__section .customers__items .customers__image {
   border-radius: 50%;
-  overflow: hidden;
-  transition: 0.3s linear;
-  margin-bottom: 24px;
-}
-.women-slider__line {
-  display: flex;
-  position: relative;
-  top: 0;
-  transition: 0.3s linear;
-}
-.women-btn__prev {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url("../img/arrows/accordion-arrow_down.svg");
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  transform: rotate(90deg);
-  opacity: 0.1;
-  transition: 0.3s linear;
-}
-.women-btn__next {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background: url("../img/arrows/accordion-arrow_down.svg") 50%;
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  transform: rotate(-90deg);
-  opacity: 0.1;
-  transition: 0.3s linear;
-}
-.women-btn__prev:hover,
-.women-btn__next:hover {
-  opacity: 1;
-}
-.women-coment {
+  max-width: 120px;
   margin: 0 auto;
-  max-width: 793px;
-  padding-bottom: 40px;
+  overflow: hidden;
 }
-.women-coment p {
-  font-family: "Inter";
+
+.customers__section .customers__items .customers__image img {
+  width: 100%;
+}
+
+.customers__section .customers__items .customers__text {
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
+  text-align: center;
+  max-width: 790px;
+  margin: 40px auto;
 }
-.women-name {
-  padding-bottom: 24px;
-}
-.women-name p {
-  font-family: "Inter";
+
+.customers__section .customers__items .customers__name {
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 150%;
+  text-align: center;
 }
-.women-dots {
+
+.customers__section .swiper-pagination-clickable .swiper-pagination-bullet {
+  background-color: #ff8a47;
+  margin: 0 6px;
+  transition: 0.2s;
+  width: 10px;
+  height: 10px;
 }
-.women-dot {
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  transform: scale(1);
-  border-radius: 50%;
-  cursor: pointer;
-  transition: 0.3s linear;
-}
-.women-dot:not(:last-child) {
-  margin-right: 10px;
-}
-.dot_active {
-  transform: scale(1.3);
+
+.customers__section .swiper-pagination-clickable .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 15px;
+  height: 15px;
 }
 /* FOOTER */
 .footer {
@@ -670,11 +639,11 @@ body.noscroll {
   padding: 50px;
   max-width: 500px;
   border-radius: 10px;
-  transform: translate(-50%,-50%) scale(0);
+  transform: translate(-50%, -50%) scale(0);
   transition: 0.5s linear;
 }
 .header__modal-form.modal-active {
-  transform: translate(-50%,-50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
   transition: 0.5s linear;
 }
 .header__modal-form label {
@@ -704,13 +673,15 @@ body.noscroll {
 .header__modal-form input::placeholder {
   font-weight: 400;
 }
-.modal-form__recovery{
+.modal-form__recovery {
   display: block;
   text-align: center;
   margin-bottom: 20px;
   transition: 0.1s linear;
 }
-.modal-form__recovery:active {color: #00ac03d3;}
+.modal-form__recovery:active {
+  color: #00ac03d3;
+}
 .modal-form__sign-in {
   padding: 10px 15px;
   border-radius: 5px;
@@ -722,7 +693,7 @@ body.noscroll {
   left: 0;
 }
 .modal-form__sign-in:hover {
-  transition: .3s linear;
+  transition: 0.3s linear;
 }
 .modal-form__sign-up {
   font-size: 13px;
